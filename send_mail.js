@@ -16,7 +16,17 @@ module.exports = {
             from: 'test-simplon@gmail.com',
             to: 'ed@gmail.com',
             subject: 'Test',
-            text: 'That was easy!'
+            text: 'That was easy!',
+            attachments: [{
+                filename: 'original.jpg',
+                //chemin d'acces car "local"
+                path: my_pic,           
+            },
+            {   
+                filename: 'thumbnail.jpg',
+                //contenu car il est créé dans la fonciton
+                content: my_thumb,            
+            }]
         };
     
         transporter.sendMail(mailOptions, function(error, info){
