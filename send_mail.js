@@ -8,7 +8,7 @@ module.exports = {
             service: 'gmail',
             auth: {
                 user: 'test-simplon@gmail.com',
-                pass: 'hello123'
+                pass: process.env.EMAIL_PWD
             }
         });
     
