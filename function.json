@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "name": "myBlob",
+      "path": "mouny-container/{name}",
+      "connection": "mouny_STORAGE",
+      "direction": "in",
+      "type": "blobTrigger"
+    },
+    {
+      "name": "outputBlob",
+      "direction": "out",
+      "type": "blob",
+      "path": "thumbnails/thumb_{name}",
+      "connection": "mouny_STORAGE"
+    }
+  ]
+}

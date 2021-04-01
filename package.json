@@ -1,0 +1,16 @@
+{
+  "name": "CopyGram",
+  "version": "1.0.0",
+  "description": "projet simplon student with azure storage and azure function",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "image-thumbnail": "^1.0.13",
+    "nodemailer": "^6.5.0"
+  }
+}
