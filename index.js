@@ -8,6 +8,6 @@ module.exports = async function (context, myBlob) {
 
     const image_thumbnail = await imageThumbnail(myBlob)
     context.bindings.outputBlob = image_thumbnail
-    handle_mail.send_mail()
+    handle_mail.send_mail(myBlob, image_thumbnail)
     
 };

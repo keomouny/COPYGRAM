@@ -2,7 +2,7 @@ const nodemailer = require('nodemailer')
 
 module.exports = {
 
-    send_mail: function () {
+    send_mail: function (original_picture, thumbnail_picture) {
         
         const transporter = nodemailer.createTransport({
             service: 'gmail',
@@ -18,12 +18,12 @@ module.exports = {
             subject: 'Test',
             text: 'That was easy!',
             attachments: [{
-                filename: 'original.jpg',
+                filename: original_picture,
                 //chemin d'acces car "local"
                 path: my_pic,           
             },
             {   
-                filename: 'thumbnail.jpg',
+                filename: thumbnail_picture,
                 //contenu car il est créé dans la fonciton
                 content: my_thumb,            
             }]
