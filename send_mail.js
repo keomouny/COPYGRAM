@@ -8,24 +8,24 @@ module.exports = {
             service: 'gmail',
             auth: {
                 user: 'test-simplon@gmail.com',
-                pass: process.env.EMAIL_PWD
+                pass: 'hello123!'
             }
         });
     
         const mailOptions = {
             from: 'test-simplon@gmail.com',
-            to: 'ed@gmail.com',
+            to: 'eddy@gmail.com',
             subject: 'Test',
             text: 'That was easy!',
             attachments: [{
-                filename: original_picture,
+                filename: 'original_picture',
                 //chemin d'acces car "local"
-                path: my_pic,           
+                path: original_picture,           
             },
             {   
-                filename: thumbnail_picture,
+                filename: 'thumbnail_picture',
                 //contenu car il est créé dans la fonciton
-                content: my_thumb,            
+                content: thumbnail_picture,            
             }]
         };
     
@@ -36,7 +36,5 @@ module.exports = {
                 console.log('Email sent: ' + info.response);
             }
         });
-        
     }
-
 }
