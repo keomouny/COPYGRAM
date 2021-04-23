@@ -17,6 +17,6 @@ For a `BlobTrigger` to work, you provide a path which dictates where the blobs a
 
 ### technologie
 
-nodejs
-azure function
-azure storage
+    - nodejs
+    - azure function
+    - azure storage
